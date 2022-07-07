@@ -1,0 +1,15 @@
+{
+  "include": ["src"],//어떤 폴더의 타입스크립트 파일을 컴파일 할것인가
+  "compilerOptions": {
+    "outDir": "build",//컴파일된 파일을 어디에 넣을 것인가
+    "esModuleInterop": true,
+    "target": "ES6",//어떤 버전의 자바스크립트로 컴파일 할 것 인가
+    "lib": ["ES6", "dom"],
+    // 어떤환경에서 돌아가는가 (자동완성제공),lib.dom.d.ts 정의파일이 
+    //typescript에게 자바스크립트 라이브러리의 call signiture을 설명해줌
+    //ex local storage
+    //ts에서 js 라이브러리 이용시필요
+    "strict": true,//엄격한 버전 
+    "allowJs": true//ts내의 js허용
+  }
+}
